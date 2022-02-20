@@ -2,10 +2,6 @@ name: AutoNKU
 
 on:
   workflow_dispatch:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
   schedule:
     - cron:  0 3 * * * 
 
@@ -20,16 +16,15 @@ jobs:
       run: |
         sudo apt update && \
         sudo apt install python3
-      
+
     - name: requirements
       run: |
         pip3 install -r requirements.txt
-        
+
     - name: Checkin
       run: |
         python3 main.py 
       env: 
-        COOKIE: ${{ secrets.COOKIE }}
-        SCON: ${{ secrets.SCON }}
-        SCKEY: ${{ secrets.SCKEY }}
-        ROOMID: ${{ secrets.ROOMID }}
+        PHPSESSID: ${{ secrets.PHPSESSID }}
+        q14: ${{ secrets.q14 }}
+        q15: ${{ secrets.q15 }}
