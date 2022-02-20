@@ -54,14 +54,13 @@
 > Secrets key 中配置的任何东西都是你本人才能看的（或者是仓库的开发者），fork 过去之后其他人是看不到的（包括我），**不用担心隐私泄露**
 
 1. 依次点击 `Settings` -> `Secrets` -> `Actions`
+    ![image-20220220143658797](README.assets/image-20220220143658797.png)
 
-2. ![image-20220220143658797](README.assets/image-20220220143658797.png)
-
-3. 点击 `New repository secret` 按钮
+2. 点击 `New repository secret` 按钮
 
    ![image-20220220143716324](README.assets/image-20220220143716324.png)
 
-4. 分别在 Name，Value 框内填入以下内容（**在校生版**，非在校生情看 6）
+3. 分别在 Name，Value 框内填入以下内容（**在校生版**，非在校生情看 4）
 
    | Name      | Value                                   |
    | --------- | --------------------------------------- |
@@ -69,7 +68,7 @@
    | q14       | 你个人手机号                            |
    | q15       | 家庭住址                                |
    
-5. 分别在 Name，Value 框内填入以下内容（**非在校生**版，开发中）
+4. 分别在 Name，Value 框内填入以下内容（**非在校生**版，开发中）
 
 ### 配置 data.json
 
