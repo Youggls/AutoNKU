@@ -1,5 +1,5 @@
 import os
-from util import load_data, in_school
+from util import load_data, in_school, out_school
 
 
 if __name__ == '__main__':
@@ -8,11 +8,7 @@ if __name__ == '__main__':
     if req_type == 'inschool':
         res = in_school(req_body, cookie_str)
     else:
-        # TODO: 非在校生未开发
-        res = {
-            'status': False,
-            'msg': '请求类型错误'
-        }
+        res = out_school(req_body, cookie_str)
     if res['status']:
         print(res['msg'])
     else:
